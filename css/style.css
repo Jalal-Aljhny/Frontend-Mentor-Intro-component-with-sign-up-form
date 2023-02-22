@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: #ff7c78;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .section1 {
+    order: -1;
+    width: 100%;
+  }
+  .container .section2 {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) and (max-width: 199px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+.section1,
+.section2 {
+  margin-top: 50px;
+  width: 45%;
+}
+.section1 h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.section1 p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.section2 .try {
+  background-color: #5d54a3;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 7px 0px 0px #11111142;
+}
+.section2 .try span {
+  font-weight: 600;
+}
+.section2 form {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 0px 0px #11111142;
+}
+.section2 .input {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section2 .input:last-of-type {
+  padding-bottom: 30px;
+}
+.section2 .input:last-of-type small {
+  bottom: -10px;
+}
+.section2 form .input i {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+}
+.section2 form .input i.fa-eye,
+.section2 form .input i.fa-eye-slash {
+  right: 30px;
+  color: hsl(154, 59%, 51%);
+  cursor: pointer;
+}
+.section2 form .input i.fa-circle-check {
+  color: hsl(154, 59%, 51%);
+}
+.section2 form .input i.fa-circle-exclamation {
+  color: #ff7c78;
+}
+.section2 form .input.accept input {
+  border: 2px solid hsl(154, 59%, 51%);
+}
+.section2 form .input.accept i.fa-circle-check {
+  display: block;
+}
+.section2 form .input.not-accept input {
+  border: 2px solid #ff7c78;
+}
+.section2 form .input.not-accept small {
+  visibility: visible;
+}
+.section2 form .input.not-accept i.fa-circle-exclamation {
+  display: block;
+}
+
+.section2 form input {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.section2 form input:focus {
+  border: 1px solid #111;
+  outline: none;
+}
+.section2 form input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 7px 0px 0px #11111142;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition-duration: 0.3s;
+}
+.section2 form input[type="submit"]:hover {
+  background-color: hsl(154, 73%, 68%);
+}
+.section2 form .input small {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  color: #ff7c78;
+  visibility: hidden;
+}
+.section2 form p {
+  color: #777;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section2 form p a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.attribution a {
+  color: #5d54a3;
+}
